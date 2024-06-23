@@ -1,0 +1,7 @@
+PENDING TASKS
+Week 1: Header como el de dropi, cartas responsive 4 por fila y un scroll con imagenes ficticias.
+Week 2: ...
+
+COMPLETED TASKS
+Week 1: Of after meeting
+Week 2: ...
