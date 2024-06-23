@@ -1,2 +1,67 @@
 @import "../colors.scss";
 
+.LandingPageContainer {
+    height: 100%;
+}
+
+.landingPageHeader {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.landingPageTabs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: $dark-green;
+    box-sizing: border-box;
+}
+
+.landingPageTabsClick {
+    padding: 1em;
+}
+
+
+.landingPageTabsClick:hover {
+    padding: 1em;
+    color: $beige;
+    background-color: $terracotta;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.rightTabs {
+    gap: 5em;
+}
+
+.authTabs {
+    gap: 2em
+}
+
+.CardsContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 16px; 
+    padding: 16px; 
+}
+
+.productCard{
+    height: 14em;
+    border-radius: 8px;
+    border: solid 1px $middle-green;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.productCard:hover{
+    cursor: pointer;
+    border-color: $light-orange;
+}
