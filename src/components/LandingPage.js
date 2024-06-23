@@ -1,9 +1,23 @@
 import React from "react";
 import classes from './LandingPage.module.scss';
+import { Each } from './Each';
 import logo from "../assets/Images/LandingPage/logoMercadoCivil.png";
 import casco from "../assets/Images/constructionProducts/casco.jpeg";
+import pala from "../assets/Images/constructionProducts/pala.jpg";
+import pica from "../assets/Images/constructionProducts/pica.jpeg";
+import carretilla from "../assets/Images/constructionProducts/carretilla.jpeg";
+import overol from "../assets/Images/constructionProducts/overol.jpeg";
 
 const LandingPage = () => {
+
+    let products = [
+        { name: "Casco", image: casco, price: 85000 },
+        { name: "Pala", image: pala, price: 75000 },
+        { name: "Pica", image: pica, price: 185000 },
+        { name: "Carretilla", image: carretilla, price: 585000 },
+        { name: "Overol", image: overol, price: 58000 },
+    ];
+
     return (
         <div className={classes.LandingPageContainer}>
             <div className={classes.landingPageHeader}>
@@ -16,30 +30,20 @@ const LandingPage = () => {
                 </div>
                 <div className={`${classes.landingPageTabs} ${classes.rightTabs}`}>
                     <div className={`${classes.landingPageTabs} ${classes.authTabs}`}>
-                        <div className={classes.landingPageTabsClick}>Inicia sesión</div>
-                        <div className={classes.landingPageTabsClick}>Registrate</div>
+                        <div className={classes.landingPageTabsClick}>Opción 1</div>
+                        <div className={classes.landingPageTabsClick}>Opción 2</div>
                     </div>
                     <div>lang</div>
                 </div>
             </div>
             <div className={classes.CardsContainer}>
-                <div className={classes.productCard}>
-                    <div>Casco</div>
-                    <img src={casco} alt="casco" height="180px" />
-                    <div>$85000 Cop</div>
-                </div>
-                <div className={classes.productCard}>product 2 ...</div>
-                <div className={classes.productCard}>product 3 ...</div>
-                <div className={classes.productCard}>product 4 ...</div>
-                <div className={classes.productCard}>product 5 ...</div>
-                <div className={classes.productCard}>product 6 ...</div>
-                <div className={classes.productCard}>product 7 ...</div>
-                <div className={classes.productCard}>product 8 ...</div>
-                <div className={classes.productCard}>product 9 ...</div>
-                <div className={classes.productCard}>product 10 ...</div>
-                <div className={classes.productCard}>product 11 ...</div>
-                <div className={classes.productCard}>product 12 ...</div>
-                <div className={classes.productCard}>product 13 ...</div>
+                <Each of={products} render={(item, index) =>
+                    <div className={classes.productCard}>
+                        <div>{item.name}</div>
+                        <img src={item.image} alt={item.image} height="180px" />
+                        <div>${item.price} Cop</div>
+                    </div>
+                } />
             </div>
             <div>Footer</div>
         </div>
