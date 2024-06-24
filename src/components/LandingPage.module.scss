@@ -1,7 +1,7 @@
 @import "../colors.scss";
 
 .LandingPageContainer {
-    height: 100%;
+    overflow-y: hidden;
 }
 
 .landingPageHeader {
@@ -42,17 +42,34 @@
     gap: 2em
 }
 
-.CardsContainer {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); 
-    gap: 16px; 
-    padding: 16px; 
+.landingPageBody {
+    display: flex;
+    flex-direction: row;
+    padding-left: 1.5em;
 }
 
-.productCard{
+.searchAndCategoriesContainer {
+    margin-right: 2em;
+}
+
+.CardsContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    padding: 16px;
+    width: 100%;
+    background-color: $light-gray;
+    border-radius: 8px;
+    padding: 2em;
+    overflow-y: auto;
+    height: 60vh;
+}
+
+.productCard {
     height: 14em;
     border-radius: 8px;
-    border: solid 1px $middle-green;
+    background-color: white;
+    border: solid 1px white;
     padding: 1em;
     display: flex;
     flex-direction: column;
@@ -61,7 +78,7 @@
     justify-content: space-between;
 }
 
-.productCard:hover{
+.productCard:hover {
     cursor: pointer;
-    border-color: $light-orange;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
