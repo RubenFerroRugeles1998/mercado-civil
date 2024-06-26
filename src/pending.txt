@@ -6,7 +6,7 @@ Week 1: Header como el de dropi, 4 cartas responsive con imagenes ficticias por
 global de toda la pagina.
 Week 2: Los tabs van a ser: Inicio, productos, misión, visión. Opciones: contactenos y Carrito de compras (icono). 
 Cartas como iedit fondo, background y animación al hover.
-Header y selector fijos (Todas, Tubería, cementos, maquinaria, dotación) y solo el scroll en las cartas. 
+Header y selector de categorías fijos (Todas, Tubería, cementos, maquinaria, dotación) y solo el scroll en las cartas. 
 Todas: incluye todas las cartas de todo.
 Click en cada categoría muestra las de cada categoría.
 ---------------------------------------------------------------------------------------------------
