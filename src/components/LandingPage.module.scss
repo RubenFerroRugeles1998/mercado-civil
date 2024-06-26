@@ -38,8 +38,8 @@
     gap: 5em;
 }
 
-.authTabs {
-    gap: 2em
+.contactAndShopTabs {
+    gap: .5em
 }
 
 .landingPageBody {
@@ -50,6 +50,25 @@
 
 .searchAndCategoriesContainer {
     margin-right: 2em;
+}
+
+.searchInputContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
+}
+
+.searchInput {
+    width: 15em;
+}
+
+.xIcon {
+    margin-left: -3em;
+}
+
+.xIcon:hover{
+    color: red;
 }
 
 .CardsContainer {

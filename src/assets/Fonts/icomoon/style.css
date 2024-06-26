@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?i2clh4');
-  src:  url('fonts/icomoon.eot?i2clh4#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?i2clh4') format('truetype'),
-    url('fonts/icomoon.woff?i2clh4') format('woff'),
-    url('fonts/icomoon.svg?i2clh4#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?redqhm');
+  src:  url('fonts/icomoon.eot?redqhm#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?redqhm') format('truetype'),
+    url('fonts/icomoon.woff?redqhm') format('woff'),
+    url('fonts/icomoon.svg?redqhm#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,42 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-instagram-black:before {
+  content: "\ea2a";
+}
+.icon-receipt:before {
+  content: "\ea28";
+}
+.icon-unitcost:before {
+  content: "\ea29";
+}
+.icon-filled-truck:before {
+  content: "\ea27";
+}
+.icon-ads:before {
+  content: "\ea26";
+}
+.icon-bicycle:before {
+  content: "\ea22";
+}
+.icon-bike:before {
+  content: "\ea23";
+}
+.icon-food-truck:before {
+  content: "\ea24";
+}
+.icon-pickup:before {
+  content: "\ea25";
+}
+.icon-coin:before {
+  content: "\ea21";
+}
+.icon-filled-map-pin:before {
+  content: "\ea20";
+}
+.icon-black-circle:before {
+  content: "\ea1f";
+}
 .icon-activity:before {
   content: "\e900";
 }
