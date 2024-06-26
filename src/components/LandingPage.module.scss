@@ -10,7 +10,7 @@
     align-items: center;
     justify-content: space-around;
     margin-top: 1em;
-    margin-bottom: 1em;
+    margin-bottom: 2em;
 }
 
 .landingPageTabs {
@@ -74,6 +74,34 @@
     color: black;
 }
 
+.categoriesContainer{
+    background-color: $light-green;
+    margin-top: 1.5em;
+    border-radius: 8px;
+    color: $white;
+    padding: 1em;
+}
+
+.categoriesText{
+    font-weight: bold;
+    font-size: 16px;
+    border-bottom: solid 1px $white;
+    padding-bottom: .5em;
+    margin-bottom: .5em;
+}
+
+.categoriesIconAndText{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: .5em;
+}
+
+.selectCategory:hover{
+    font-weight: bold;
+    cursor: pointer;
+}
+
 .CardsContainer {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -90,8 +118,8 @@
 .productCard {
     height: 14em;
     border-radius: 8px;
-    background-color: white;
-    border: solid 1px white;
+    background-color: $white;
+    border: solid 1px $white;
     padding: 1em;
     display: flex;
     flex-direction: column;

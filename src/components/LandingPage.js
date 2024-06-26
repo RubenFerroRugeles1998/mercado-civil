@@ -31,6 +31,14 @@ const LandingPage = () => {
         { name: "Overol", image: overol, price: 58000 }
     ];
 
+    let categories = [
+        { icon: "icon-all", name: "Todas" },
+        { icon: "icon-pipe", name: "Tubería" },
+        { icon: "icon-concrete", name: "Cementos" },
+        { icon: "icon-machinery", name: "Maquinaria" },
+        { icon: "icon-coveralls", name: "Dotación" }
+    ]
+
     // Para el Search Bar ----------------------------------
     const [inputValue, setInputValue] = useState('');
 
@@ -80,12 +88,14 @@ const LandingPage = () => {
                             <i className="icon-x" onClick={clearSearchBar}></i>
                         </div>
                     </div>
-                    <div>
-                        <div>Todas</div>
-                        <div>Tubería</div>
-                        <div>Cementos</div>
-                        <div>Maquinaria</div>
-                        <div>Dotación</div>
+                    <div className={classes.categoriesContainer}>
+                        <div className={classes.categoriesText} >Categorías</div>
+                        <Each of={categories} render={(item, index) =>
+                            <div className={classes.categoriesIconAndText}>
+                                <div className={item.icon}></div>
+                                <div className={classes.selectCategory} >{item.name}</div>
+                            </div>
+                        } />
                     </div>
                 </div>
                 <div className={classes.CardsContainer}>
