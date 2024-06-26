@@ -60,15 +60,18 @@
 }
 
 .searchInput {
-    width: 15em;
+    width: 14em;
 }
 
 .xIcon {
-    margin-left: -3em;
+    position: absolute;
+    left: 13.8em;
+    color: gray;
 }
 
 .xIcon:hover{
-    color: red;
+    cursor: pointer;
+    color: black;
 }
 
 .CardsContainer {

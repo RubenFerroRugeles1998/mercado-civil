@@ -33,3 +33,18 @@ $scroll: 10px;
   border-radius: 10px;
   background-color: $dark-blue;
 }
+
+
+// Material input styles
+
+.css-1jy569b-MuiFormLabel-root-MuiInputLabel-root {
+  color: gray !important;
+}
+
+.css-1d3z3hw-MuiOutlinedInput-notchedOutline {
+  border-color: $light-gray !important;
+}
+
+.css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
+padding-right: 2.5em !important;
+}
