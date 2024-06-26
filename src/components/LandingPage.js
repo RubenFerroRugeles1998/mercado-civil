@@ -37,6 +37,10 @@ const LandingPage = () => {
     const handleChange = (e) => {
         setInputValue(e.target.value);
     };
+
+    const clearSearchBar = () => {
+        setInputValue('');
+    };
     // -----------------------------------------------------
 
     return (
@@ -73,7 +77,7 @@ const LandingPage = () => {
                             onChange={handleChange}
                         />
                         <div className={classes.xIcon}>
-                            <i className="icon-x" ></i>
+                            <i className="icon-x" onClick={clearSearchBar}></i>
                         </div>
                     </div>
                     <div>
