@@ -1,19 +1,20 @@
 @import "../../colors.scss";
 
-.LandingPageContainer{
+.LandingPageContainer {
     height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    overflow-y: hidden;
 }
 
-.LandingPageHeader{
+.LandingPageHeader {
     background-color: $dark-blue;
     margin: 1em;
-    height: 3.8em;
-    padding: 0em 2em;
-    width: calc(100% - 6em);
+    height: 4.7em;
+    padding: 0em 1em;
+    width: calc(100% - 4em);
     border-radius: .5em;
     display: flex;
     flex-direction: row;
@@ -21,31 +22,131 @@
     justify-content: space-between;
 }
 
-.LandingPageHeaderIcon{
+.LandingPageHeaderIcon {
     display: flex;
     flex-direction: row;
+    margin-right: 7.3em;
 }
 
-.LandingPageHeaderIconText{
+.LandingPageHeaderIconText {
     color: $white;
     font-size: 20px;
     font-weight: bold;
+    margin-left: .2em;
 }
 
-.inputWithIcon{
+.inputWithIcon {
     display: flex;
     flex-direction: row;
     align-items: center;
     flex: 1;
+    margin-right: 2em;
 }
 
 .xIcon {
-    color: gray;
+    color: $gray;
     margin-left: -1.5em;
     z-index: 2;
 }
 
-.xIcon:hover{
+.xIcon:hover {
     cursor: pointer;
-    color: black;
+    color: $black;
+}
+
+.contactUs {
+    color: $white;
+    margin-right: 1em;
+}
+
+.contactUs:hover {
+    color: $light-orange;
+    cursor: pointer;
+}
+
+.shoppingCartIcon {
+    color: $white;
+    margin-right: 1em;
+}
+
+.shoppingCartIcon:hover {
+    color: $light-green;
+    cursor: pointer;
+}
+
+.menu {
+    color: $white;
+}
+
+.menu:hover {
+    cursor: pointer;
+}
+
+.LandingPageBody {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    margin: 0em 1em 1em 1em;
+    width: calc(100% - 2em);
+    height: 100%;
+}
+
+.selectorContainer {
+    width: 15%;
+}
+
+.categoriesContainer {
+    background-color: $light-green;
+    border-radius: 8px;
+    color: $white;
+    padding: .6em 1em 1em 1em;
+}
+
+.categoriesText {
+    font-weight: bold;
+    font-size: 16px;
+    border-bottom: solid 1px $white;
+    padding-bottom: .5em;
+    margin-bottom: .5em;
+}
+
+.categoriesIconAndText {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: .5em;
+}
+
+.selectCategory:hover {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.productsContainer {
+    background-color: $light-gray;
+    border-radius: .5em;
+    width: 85%;
+    padding: .6em 1em 1em 1em;
+}
+
+.productsDisplay {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    overflow-y: auto;
+    padding: 1em;
+    gap: 16px;
+    padding: 16px;
+}
+
+.productCard {
+    background-color: $white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.productCard:hover {
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
