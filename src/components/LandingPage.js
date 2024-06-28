@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import classes from './LandingPage.module.scss';
-import { Each } from './Each';
+import { Each } from './Utils/Each';
 import TextField from '@mui/material/TextField';
 import Tooltip from '@mui/material/Tooltip';
 import products from '../data/products.json';

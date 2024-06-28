@@ -63,6 +63,12 @@
     width: 15em;
 }
 
+.clearIcon{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 .xIcon {
     position: absolute;
     left: 14.8em;

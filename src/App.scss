@@ -1,6 +1,8 @@
 @import "./colors.scss";
 
-html, body, #root {
+html,
+body,
+#root {
   height: 100%;
   margin: 0;
   padding: 0;
@@ -35,16 +37,32 @@ $scroll: 10px;
 }
 
 
-// Material input styles
+// Material input styles--------------------------------------
 
 .css-1jy569b-MuiFormLabel-root-MuiInputLabel-root {
-  color: gray !important;
+  color: black !important;
 }
 
 .css-1d3z3hw-MuiOutlinedInput-notchedOutline {
-  border-color: $light-gray !important;
+  border-color: transparent !important;
 }
 
 .css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
-padding-right: 2.5em !important;
+  padding-right: 2.5em !important;
+  background-color: $light-gray !important;
+  height: 0em !important;
+  border-radius: .5em;
 }
+
+.css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
+  color: black !important;
+}
+
+.css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root {
+  color: black !important;
+}
+
+.MuiTextField-root {
+  width: 100%; 
+}
+// -------------------------------------------------------------
