@@ -14,19 +14,20 @@ import overol from "../../assets/Images/constructionProducts/overol.jpeg";
 const LandingPage = () => {
 
     let products = [
-        { name: "Casco", image: casco, price: 85000 },
-        { name: "Pala", image: pala, price: 75000 },
-        { name: "Pica", image: pica, price: 185000 },
-        { name: "Carretilla", image: carretilla, price: 585000 },
-        { name: "Overol", image: overol, price: 58000 }
+        { name: "Casco", image: casco, price: 85000, equipment: "Dotación", serial: 111111 },
+        { name: "Pala", image: pala, price: 75000, equipment: "Herramienta", serial: 111112 },
+        { name: "Pica", image: pica, price: 185000, equipment: "Herramienta", serial: 111113 },
+        { name: "Carretilla", image: carretilla, price: 585000, equipment: "Herramienta", serial: 111114 },
+        { name: "Overol", image: overol, price: 58000, equipment: "Dotación", serial: 111115 }
     ];
 
     let categories = [
-        { icon: "icon-all", name: "Todas" },
+        { icon: "icon-all", name: "Todos" },
         { icon: "icon-pipe", name: "Tubería" },
         { icon: "icon-concrete", name: "Cementos" },
         { icon: "icon-machinery", name: "Maquinaria" },
-        { icon: "icon-coveralls", name: "Dotación" }
+        { icon: "icon-coveralls", name: "Dotación" },
+        { icon: "icon-tool", name: "Herramienta" }
     ]
 
     // Para el Search Bar ----------------------------------
@@ -40,6 +41,14 @@ const LandingPage = () => {
         setInputValue('');
     };
     // -----------------------------------------------------
+
+    // Para el Selected Category --------------------------------------
+    const [selectedCategory, setSelectedCategory] = useState('Todos');
+
+    const handleCategoryClick = (categoryName) => {
+        setSelectedCategory(categoryName);
+    };
+    // ----------------------------------------------------------------
 
     return (
         <div className={classes.LandingPageContainer}>
@@ -80,21 +89,28 @@ const LandingPage = () => {
                     <div className={classes.categoriesContainer}>
                         <div className={classes.categoriesText} >Categorías</div>
                         <Each of={categories} render={(item, index) =>
-                            <div className={classes.categoriesIconAndText}>
+                            <div className={classes.categoriesIconAndText} onClick={() => handleCategoryClick(item.name)}>
                                 <div className={item.icon}></div>
-                                <div className={classes.selectCategory} >{item.name}</div>
+                                <div className={`${classes.selectCategory} ${selectedCategory === item.name ? classes.selectedCategory : ''}`} >{item.name}</div>
                             </div>
                         } />
                     </div>
                 </div>
                 <div className={classes.productsContainer}>
-                    <div>Productos: </div>
+                    <div className={classes.productsText}>Productos: {selectedCategory}</div>
                     <div className={classes.productsDisplay}>
                         <Each of={products} render={(item, index) =>
-                            <div className={classes.productCard}>
-                                <img src={item.image} alt={item.image} height="180px" />
+                            <div className={classes.completeProduct}>
+                                <div className={classes.productCard}>
+                                    <img src={item.image} alt={item.image} height="180px" />
+                                </div>
+                                <div className={classes.productDescription}>
+                                    <div className={classes.equipmentText}>Equipo de {item.equipment}</div>
+                                    <div className={classes.productName}>{item.name}</div>
+                                    <div>ítem {item.serial}</div>
+                                    <div className={classes.copText}>COP {item.price}</div>
+                                </div>
                             </div>
-                            // <div>{index + 1}</div>
                         } />
                     </div>
                 </div>
