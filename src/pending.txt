@@ -4,19 +4,21 @@
 PENDING TASKS
 Week 1: Header como el de dropi, 4 cartas responsive con imagenes ficticias por fila y un scroll
 global de toda la pagina.
-Week 2: Los tabs van a ser: Inicio, productos, misión, visión. Opciones: contactenos y Carrito de compras (icono). 
+Week 2: Header del mockup. 
 Cartas como iedit fondo, background y animación al hover y solo el scroll en las cartas. 
-Header y selector de categorías fijos (Todas, Tubería, cementos, maquinaria, dotación).
-Todas: incluye todas las cartas de todo.
-Click en cada categoría muestra las de cada categoría.
+Header y selector de categorías a la izquierda (Todas, Tubería, cementos, maquinaria, dotación y herramientas) Por ahora.
+Implementar las cartas como en el mockup envíado.
+Week 3: ...
 ---------------------------------------------------------------------------------------------------
 COMPLETED TASKS
-Week 1: ok
+Week 1: Ok
 Week 2: ...
+Week 3: ...
 ---------------------------------------------------------------------------------------------------
 COMMENTS:
-Week 1: ...
-Week 2: ...
+Week 1: NA
+Week 2: Nuevo mockup mandado por whastapp para estar implementado.
+Week 3: ...
 ---------------------------------------------------------------------------------------------------
                                     RESOURCES AND HELP
 ---------------------------------------------------------------------------------------------------
