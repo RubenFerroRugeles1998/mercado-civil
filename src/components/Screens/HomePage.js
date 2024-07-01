@@ -5,20 +5,20 @@ import { Each } from '../Utils/Each';
 import TextField from '@mui/material/TextField';
 import Tooltip from '@mui/material/Tooltip';
 import casco from "../../assets/Images/constructionProducts/casco.jpeg";
+import overol from "../../assets/Images/constructionProducts/overol.jpeg";
 import pala from "../../assets/Images/constructionProducts/pala.jpg";
 import pica from "../../assets/Images/constructionProducts/pica.jpeg";
 import carretilla from "../../assets/Images/constructionProducts/carretilla.jpeg";
-import overol from "../../assets/Images/constructionProducts/overol.jpeg";
-
 
 const LandingPage = () => {
 
     let products = [
         { name: "Casco", image: casco, price: 85000, equipment: "Dotación", serial: 111111 },
+        { name: "Overol", image: overol, price: 58000, equipment: "Dotación", serial: 111115 },
         { name: "Pala", image: pala, price: 75000, equipment: "Herramienta", serial: 111112 },
         { name: "Pica", image: pica, price: 185000, equipment: "Herramienta", serial: 111113 },
         { name: "Carretilla", image: carretilla, price: 585000, equipment: "Herramienta", serial: 111114 },
-        { name: "Overol", image: overol, price: 58000, equipment: "Dotación", serial: 111115 }
+
     ];
 
     let categories = [

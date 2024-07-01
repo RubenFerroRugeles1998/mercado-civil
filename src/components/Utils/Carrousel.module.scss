@@ -1,0 +1,60 @@
+@import "../../colors.scss";
+
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 1em;
+  
+    &Inner {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+  
+    &Item {
+      min-width: 100%;
+      transition: opacity 0.5s ease-in-out;
+  
+      &.active {
+        opacity: 1;
+      }
+  
+      &:not(.active) {
+        opacity: 0;
+      }
+  
+      img {
+        width: 100%;
+        display: block;
+      }
+    }
+  
+    .arrowLeft, .arrowRight {
+      position: absolute;
+      border-radius: 50%;
+      width: 2.5em;
+      height: 2.55em;
+      top: 50%;
+      transform: translateY(-50%);
+      background: $primary;
+      color: #fff;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      z-index: 2;
+  
+      &:hover {
+        background: $secondary;
+      }
+    }
+  
+    .arrowLeft {
+      left: 10px;
+    }
+  
+    .arrowRight {
+      right: 10px;
+    }
+  }
