@@ -74,6 +74,8 @@ const LandingPage = () => {
     const handleCategoryClick = (categoryName) => {
         setSelectedCategory(categoryName);
     };
+
+    const filteredProducts = selectedCategory === 'Todos' ? products : products.filter(product => product.equipment === selectedCategory);
     // ----------------------------------------------------------------
 
     return (
@@ -125,7 +127,7 @@ const LandingPage = () => {
                 <div className={classes.productsContainer}>
                     <div className={classes.productsText}>Productos: {selectedCategory}</div>
                     <div className={classes.productsDisplay}>
-                        <Each of={products} render={(item, index) =>
+                        <Each of={filteredProducts} render={(item, index) =>
                             <div className={classes.completeProduct}>
                                 <div className={classes.productCard}>
                                     <img src={item.image} alt={item.image} height="180px" />
