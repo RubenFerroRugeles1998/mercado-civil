@@ -2,6 +2,7 @@
                             MERCADO CIVIL PROYECT MEETING SUMMARY
 ---------------------------------------------------------------------------------------------------
 PENDING TASKS
+---------------------------------------------------------------------------------------------------
 Week 1: Header como el de dropi, 4 cartas responsive con imagenes ficticias por fila y un scroll
 global de toda la pagina.
 Week 2: Header del mockup. 
@@ -14,12 +15,14 @@ de compras.
 week 4: 
 ---------------------------------------------------------------------------------------------------
 COMPLETED TASKS
+---------------------------------------------------------------------------------------------------
 Week 1: Ok
 Week 2: Ok
 Week 3: ...
 week 4: 
 ---------------------------------------------------------------------------------------------------
 COMMENTS:
+---------------------------------------------------------------------------------------------------
 Week 1: NA
 Week 2: Nuevo mockup mandado por whastapp para estar implementado.
 Week 3: Agrandar el icono de menu y carrito de compras, alejar el final del icono de menu.
