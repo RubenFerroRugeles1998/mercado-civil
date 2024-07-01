@@ -8,17 +8,22 @@ Week 2: Header del mockup.
 Cartas como iedit fondo, background y animación al hover y solo el scroll en las cartas. 
 Header y selector de categorías a la izquierda (Todas, Tubería, cementos, maquinaria, dotación y herramientas) Por ahora.
 Implementar las cartas como en el mockup envíado.
-Week 3: ...
+Week 3: Hacer servir el selector, hacer servir el search bar, nombre y logo de la pestaña: MERCADO
+CIVIL y el logo. Dialogos para contactenos, carrito de compras y tarjeta de producto. Badge con 1 en carrito 
+de compras.
 ---------------------------------------------------------------------------------------------------
 COMPLETED TASKS
 Week 1: Ok
-Week 2: ...
+Week 2: Ok
 Week 3: ...
 ---------------------------------------------------------------------------------------------------
 COMMENTS:
 Week 1: NA
 Week 2: Nuevo mockup mandado por whastapp para estar implementado.
-Week 3: ...
+Week 3: Agrandar el icono de menu y carrito de compras, alejar el final del icono de menu.
+Logo hacer parezca un texto el logo y el texto. Scroll bar a la latura de las tarjetas. 
+Descipción de los productos pendiente de envío.
+Week 4: 
 ---------------------------------------------------------------------------------------------------
                                     RESOURCES AND HELP
 ---------------------------------------------------------------------------------------------------

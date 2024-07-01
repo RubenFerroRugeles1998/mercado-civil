@@ -10,15 +10,14 @@
 }
 
 .LandingPageHeader {
-    background-color: $dark-blue;
-    margin: 1em;
-    padding: 1em 1em;
+    background-color: #2A3D45;
+    padding: .5em 2em;
     width: calc(100% - 4em);
-    border-radius: .5em;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 1em;
 }
 
 .LandingPageHeaderIcon {
@@ -95,16 +94,15 @@
 }
 
 .categoriesContainer {
-    background-color: $light-green;
     border-radius: 8px;
-    color: $white;
+    color: #333;
     padding: .6em 1em 1em 1em;
 }
 
 .categoriesText {
     font-weight: bold;
     font-size: 16px;
-    border-bottom: solid 1px $white;
+    border-bottom: solid 1px #333;
     padding-bottom: .5em;
     margin-bottom: .5em;
 }
@@ -136,7 +134,7 @@
     border-bottom: solid 1px $gray;
     padding-bottom: .5em;
     margin-left: 1em;
-    margin-right: 1em;
+    margin-right: 2em;
     color: $gray;
 }
 
