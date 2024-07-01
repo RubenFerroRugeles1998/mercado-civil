@@ -1,17 +1,1 @@
-[
-    { "name": "Casco", "image": "casco", "price": 85000 },
-    { "name": "Pala", "image": "pala", "price": 75000 },
-    { "name": "Pica", "image": "pica", "price": 185000 },
-    { "name": "Carretilla", "image": "carretilla", "price": 585000 },
-    { "name": "Overol", "image": "overol", "price": 58000 },
-    { "name": "Casco", "image": "casco", "price": 85000 },
-    { "name": "Pala", "image": "pala", "price": 75000 },
-    { "name": "Pica", "image": "pica", "price": 185000 },
-    { "name": "Carretilla", "image": "carretilla", "price": 585000 },
-    { "name": "Overol", "image": "overol", "price": 58000 },
-    { "name": "Casco", "image": "casco", "price": 85000 },
-    { "name": "Pala", "image": "pala", "price": 75000 },
-    { "name": "Pica", "image": "pica", "price": 185000 },
-    { "name": "Carretilla", "image": "carretilla", "price": 585000 },
-    { "name": "Overol", "image": "overol", "price": 58000 }
-]
+

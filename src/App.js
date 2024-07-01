@@ -1,10 +1,10 @@
 import React from 'react';
 import './App.scss';
-import HomePage from "./components/Screens/HomePage";
+import LandingPage from "./components/Screens/LandingPage";
 
 function App() {
   return (
-    <HomePage/>
+    <LandingPage/>
   );
 }
 
