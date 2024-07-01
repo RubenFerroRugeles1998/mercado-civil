@@ -56,7 +56,7 @@ const LandingPage = () => {
                 <div className={classes.LandingPageHeaderIcon} >
                     <img src={logo} alt="logo" height="50px" />
                     <div className={classes.LandingPageHeaderIconText} >
-                        <div>ercado</div>
+                        <div className={classes.ercadoText}>ercado</div>
                         <div>ivil</div>
                     </div>
                 </div>

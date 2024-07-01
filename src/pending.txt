@@ -11,11 +11,13 @@ Implementar las cartas como en el mockup envíado.
 Week 3: Hacer servir el selector, hacer servir el search bar, nombre y logo de la pestaña: MERCADO
 CIVIL y el logo. Dialogos para contactenos, carrito de compras y tarjeta de producto. Badge con 1 en carrito 
 de compras.
+week 4: 
 ---------------------------------------------------------------------------------------------------
 COMPLETED TASKS
 Week 1: Ok
 Week 2: Ok
 Week 3: ...
+week 4: 
 ---------------------------------------------------------------------------------------------------
 COMMENTS:
 Week 1: NA
