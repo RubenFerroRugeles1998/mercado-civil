@@ -36,11 +36,20 @@ $scroll: 10px;
   background-color: $dark-blue;
 }
 
+// Estilos para anular el resaltado azul claro en el autocompletar
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px fade-out($white, 0.5) inset !important;
+  caret-color: $black;
+}
+
 
 // Material input styles--------------------------------------
 
 .css-1jy569b-MuiFormLabel-root-MuiInputLabel-root {
-  color: black !important;
+  color: $black !important;
 }
 
 .css-1d3z3hw-MuiOutlinedInput-notchedOutline {
@@ -51,15 +60,15 @@ $scroll: 10px;
   padding-right: 2.5em !important;
   background-color: $light-gray !important;
   height: 0em !important;
-  border-radius: .5em;
+  border-radius: .2em;
 }
 
 .css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
-  color: black !important;
+  color: $black !important;
 }
 
 .css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root {
-  color: black !important;
+  color: $black !important;
 }
 
 .MuiTextField-root {

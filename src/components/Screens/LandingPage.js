@@ -32,18 +32,18 @@ const LandingPage = () => {
         // ---------------------------------------------------------------------------------------------------
         { name: "Pala", image: pala, price: 75000, equipment: "Herramienta", serial: 211111 },
         { name: "Pica", image: pica, price: 185000, equipment: "Herramienta", serial: 211112 },
-        { name: "Carretilla", image: carretilla, price: 585000, equipment: "Herramienta", serial: 211113},
-        { name: "Martillo", image: martillo, price: 585000, equipment: "Herramienta", serial: 211114},
+        { name: "Carretilla", image: carretilla, price: 585000, equipment: "Herramienta", serial: 211113 },
+        { name: "Martillo", image: martillo, price: 585000, equipment: "Herramienta", serial: 211114 },
         // ---------------------------------------------------------------------------------------------------
-        { name: "PVC", image: pvc, price: 585000, equipment: "Tubería", serial: 311111},
-        { name: "Conduit", image: conduit, price: 585000, equipment: "Tubería", serial: 311112},
-        { name: "CPV", image: cpvc, price: 585000, equipment: "Tubería", serial: 311113},
-        { name: "Polipropileno", image: polipropileno, price: 585000, equipment: "Tubería", serial: 311114},
+        { name: "PVC", image: pvc, price: 585000, equipment: "Tubería", serial: 311111 },
+        { name: "Conduit", image: conduit, price: 585000, equipment: "Tubería", serial: 311112 },
+        { name: "CPV", image: cpvc, price: 585000, equipment: "Tubería", serial: 311113 },
+        { name: "Polipropileno", image: polipropileno, price: 585000, equipment: "Tubería", serial: 311114 },
         // ---------------------------------------------------------------------------------------------------
-        { name: "Cemento tipo 1", image: cementoTipo1, price: 585000, equipment: "Cementos", serial: 411111},
-        { name: "Cemento tipo 2", image: cementoTipo2, price: 585000, equipment: "Cementos", serial: 411112},
-        { name: "Cemento tipo 3", image: cementoTipo3, price: 585000, equipment: "Cementos", serial: 411113},
-        { name: "Cemento tipo 4", image: cementoTipo4, price: 585000, equipment: "Cementos", serial: 411114},
+        { name: "Cemento tipo 1", image: cementoTipo1, price: 585000, equipment: "Cementos", serial: 411111 },
+        { name: "Cemento tipo 2", image: cementoTipo2, price: 585000, equipment: "Cementos", serial: 411112 },
+        { name: "Cemento tipo 3", image: cementoTipo3, price: 585000, equipment: "Cementos", serial: 411113 },
+        { name: "Cemento tipo 4", image: cementoTipo4, price: 585000, equipment: "Cementos", serial: 411114 },
         // ---------------------------------------------------------------------------------------------------
     ];
 
@@ -52,8 +52,8 @@ const LandingPage = () => {
         { icon: "icon-coveralls", name: "Dotación" },
         { icon: "icon-tool", name: "Herramienta" },
         { icon: "icon-pipe", name: "Tubería" },
-        { icon: "icon-concrete", name: "Cementos"},
-        // { icon: "icon-machinery", name: "Maquinaria"},
+        { icon: "icon-concrete", name: "Cementos" },
+        { icon: "icon-machinery", name: "Maquinaria" },
     ]
 
     // Para el Search Bar ----------------------------------
@@ -75,7 +75,14 @@ const LandingPage = () => {
         setSelectedCategory(categoryName);
     };
 
-    const filteredProducts = selectedCategory === 'Todos' ? products : products.filter(product => product.equipment === selectedCategory);
+    const filteredProducts = selectedCategory === 'Todos'
+        ? products.filter(product =>
+            product.name.toLowerCase().includes(inputValue.toLowerCase())
+        )
+        : products.filter(product =>
+            product.equipment === selectedCategory &&
+            product.name.toLowerCase().includes(inputValue.toLowerCase())
+        );
     // ----------------------------------------------------------------
 
     return (
@@ -126,21 +133,25 @@ const LandingPage = () => {
                 </div>
                 <div className={classes.productsContainer}>
                     <div className={classes.productsText}>Productos: {selectedCategory}</div>
-                    <div className={classes.productsDisplay}>
-                        <Each of={filteredProducts} render={(item, index) =>
-                            <div className={classes.completeProduct}>
-                                <div className={classes.productCard}>
-                                    <img src={item.image} alt={item.image} height="180px" />
+                    {filteredProducts.length === 0 ? (
+                        <div className={classes.anyProductAvailable} >No hay productos disponibles</div>
+                    ) :
+                        <div className={classes.productsDisplay}>
+                            <Each of={filteredProducts} render={(item, index) =>
+                                <div className={classes.completeProduct}>
+                                    <div className={classes.productCard}>
+                                        <img src={item.image} alt={item.image} height="180px" />
+                                    </div>
+                                    <div className={classes.productDescription}>
+                                        <div className={classes.equipmentText}>Equipo de {item.equipment}</div>
+                                        <div className={classes.productName}>{item.name}</div>
+                                        <div>ítem {item.serial}</div>
+                                        <div className={classes.copText}>COP {item.price}</div>
+                                    </div>
                                 </div>
-                                <div className={classes.productDescription}>
-                                    <div className={classes.equipmentText}>Equipo de {item.equipment}</div>
-                                    <div className={classes.productName}>{item.name}</div>
-                                    <div>ítem {item.serial}</div>
-                                    <div className={classes.copText}>COP {item.price}</div>
-                                </div>
-                            </div>
-                        } />
-                    </div>
+                            } />
+                        </div>
+                    }
                 </div>
             </div>
         </div>

@@ -145,6 +145,10 @@
     color: $gray;
 }
 
+.anyProductAvailable{
+    padding: .5em 1em 1em 1em;
+}
+
 .productsDisplay {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
