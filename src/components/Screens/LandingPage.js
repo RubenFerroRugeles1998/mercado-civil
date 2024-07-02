@@ -4,6 +4,7 @@ import logo from "../../assets/Images/LandingPage/whiteLogo.jpg";
 import { Each } from '../Utils/Each';
 import TextField from '@mui/material/TextField';
 import Tooltip from '@mui/material/Tooltip';
+import ProductDialog from "../Utils/ProductDialog";
 // ---------------------------------------------------------------------------------------------------
 import casco from "../../assets/Images/constructionProducts/casco.jpeg";
 import overol from "../../assets/Images/constructionProducts/overol.jpeg";
@@ -66,8 +67,6 @@ const LandingPage = () => {
     const clearSearchBar = () => {
         setInputValue('');
     };
-    // -----------------------------------------------------
-
     // Para el Selected Category --------------------------------------
     const [selectedCategory, setSelectedCategory] = useState('Todos');
 
@@ -83,6 +82,16 @@ const LandingPage = () => {
             product.equipment === selectedCategory &&
             product.name.toLowerCase().includes(inputValue.toLowerCase())
         );
+    // Para el Product Dialog -----------------------------------------
+    const [selectedProduct, setSelectedProduct] = useState(null);
+
+    const handleClick = (product) => {
+        setSelectedProduct(product);
+    };
+
+    const handleClose = () => {
+        setSelectedProduct(null);
+    };
     // ----------------------------------------------------------------
 
     return (
@@ -138,7 +147,7 @@ const LandingPage = () => {
                     ) :
                         <div className={classes.productsDisplay}>
                             <Each of={filteredProducts} render={(item, index) =>
-                                <div className={classes.completeProduct}>
+                                <div className={classes.completeProduct} onClick={() => handleClick(item)}>
                                     <div className={classes.productCard}>
                                         <img src={item.image} alt={item.image} height="180px" />
                                     </div>
@@ -152,6 +161,9 @@ const LandingPage = () => {
                             } />
                         </div>
                     }
+                    {selectedProduct && (
+                        <ProductDialog product={selectedProduct} open={true} handleClose={handleClose} />
+                    )}
                 </div>
             </div>
         </div>
